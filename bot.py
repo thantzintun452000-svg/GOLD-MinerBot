@@ -2,10 +2,10 @@ from telegram.ext import Application, CommandHandler
 
 # /start command
 async def start(update, context):
-    await update.message.reply_text("Hello! Bot is running on GitHub Actions 🚀")
+    await update.message.reply_text("Hello 👋 Bot အလုပ်လုပ်နေပါပြီ!")
 
 def main():
-    TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"  # မင်းရဲ့ BotFather Token ထည့်ရန်
+    TOKEN = "8261763462:AAFLl4RTMctrrLMU4_0kPJ2vkdUuwVXd7gA"  # မင်းရဲ့ အသစ် Bot Token
 
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
